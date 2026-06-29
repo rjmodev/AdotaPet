@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdotaPet</title>
+</head>
+<body>
+    <h1>AdotaPet</h1>
+    <h2>Cadastre um animal para adoção:</h2>
+    <form id="formAnimal" action="#">
+        <label for="nomeAnimal">Nome do animal:            
+        </label>
+        <input type="text" id="nomeAnimal" name="nome" required  placeholder="Ex: Thor" ><br>
+        <label for="especieAnimal">Espécie do animal:
+        </label>
+        <input type="text" id="especieAnimal" name="especie" required placeholder="Ex: Cachorro"><br>
+        <label for="idadeAnimal">Idade do animal:
+        </label>        
+        <input type="number" id="idadeAnimal" name="idade" required placeholder="Ex: 3"><br>
+        <label for="descricaoAnimal">Descrição do animal:
+        </label>
+        <textarea id="descricaoAnimal" name="descricao" placeholder="Conte um pouco sobre a personalidade do pet..."></textarea><br>
+        <button>Cadastrar</button>
+    </form>
+    <section id="listaAnimais">
+        <h2>Animais disponíveis para adoção:</h2>
+        <ul id="containerAnimais">
+            <!-- Os animais cadastrados aparecerão aqui -->
+        </ul>    
+    </section> 
+    <script src="script.js"></script>
+</body>
+</html>
